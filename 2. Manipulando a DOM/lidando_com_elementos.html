@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Lidando com elementos</title>
+    </head>
+    <body>
+        <div id="app">
+          <input id="nome" />
+          <button > Adicionar </button>
+        </div>
+       <script>
+          var linkElement = document.createElement('a');
+          linkElement.href = 'https://www.google.com';
+          linkElement.setAttribute('title', 'acessar o gúgou');
+
+          var textElement = document.createTextNode('acessar o google');
+          linkElement.appendChild(textElement); //adiciona textElement como filha da linkElement
+
+          var container = document.querySelector('#app');
+          container.appendChild(linkElement);
+
+          var inputElement = document.querySelector('#nome');
+          var buttonElement = document.querySelector('button');
+          container.removeChild(inputElement);
+          container.removeChild(buttonElement);
+       </script>
+    </body>
+</html>
