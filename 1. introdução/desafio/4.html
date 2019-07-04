@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Exercicio 4</title>
+    </head>
+    <body>
+       <script>
+          function experiencia(anos) {
+            if (anos === 0 || anos === 1) {
+                return ("iniciante");
+            } else if (anos > 0 && anos < 4){
+                return ("intermediário");
+            } else if (anos > 2 && anos < 7){
+                return ("avançado");
+            } else if (anos >= 7){
+                return ("jedi master");
+            } else return ("indefinido");
+          }
+
+        var anosEstudo = 7;
+        console.log(experiencia(anosEstudo));
+       </script>
+    </body>
+</html>
